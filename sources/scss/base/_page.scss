@@ -4,15 +4,10 @@ html {
 
 body {
     font-size: 16px;
-    line-height: 1.3em;
+    line-height: 1.5em;
     font-family: OpenSans;
     font-weight: 100;
     color: $darkgrey;
-}
-
-div[id="zen-supporting"] div[role="article"], div[id="zen-preamble"]{
-    margin: 0 5% 0 8%;
-    width: 50%;
 }
 
 div[role="main"]::after {

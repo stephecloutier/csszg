@@ -4,10 +4,10 @@ div[id="zen-summary"]{
     p:first-child {
         font-family: LeagueSpartan;
         font-size: 1.5em;
-        line-height: 1.3em;
+        line-height: 1.5em;
         color: $darkgrey;
         padding: 3em 0;
-        width: 55%;
+        width: 50%;
         margin: 0 auto;
     }
     p:nth-child(2){
@@ -26,5 +26,30 @@ div[id="zen-summary"]{
         a:hover {
             @include biglink-hover;
         }
+    }
+}
+
+div[id="zen-preamble"]{
+    float: left;
+
+
+    width: 40%;
+    padding-right: 52%;
+    margin-left: 8%;
+
+    font-size: 1.3em;
+    line-height: 1.5;
+
+    font-weight: 500;
+
+    background: transparent url("../images/css-intro.svg") no-repeat;
+    background-position: 74%;
+    background-size: 20%;
+
+    h3 {
+        width: 50%;
+        border-bottom: none;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.4em;
     }
 }
