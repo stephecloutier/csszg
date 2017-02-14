@@ -18,3 +18,10 @@ div[id="zen-supporting"] div[role="article"], div[id="zen-preamble"]{
 div[role="main"]::after {
     @include clearfloat;
 }
+
+::selection {
+  background: $limegreen; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $limegreen; /* Gecko Browsers */
+}
