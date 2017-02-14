@@ -2,40 +2,48 @@
 
 var
     gulp = require('gulp'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    image = require( 'gulp-image' ),
+    autoprefixer = require( 'gulp-autoprefixer' ),
+    csso = require( 'gulp-csso' );
 
 
 // Définition de quelques variable générales pour notre gulpfile
 
 var
     source = 'sources/',
-    dest = 'build/';
+    dest = 'assets/';
 
 
 // Définition de quelques variables liées à nos tâches (options de tâches)
 
-var
-    css = {
-        in: source + 'scss/main.scss',
-        watch: [source + 'scss/**/*'],
-        out: dest + 'css/',
-        sassOpts: {
-            outputStyle: 'nested',
-            precision: 3,
-            errLogToConsole: true
-        }
-    };
-
 // Définition des tâches
 
-gulp.task('sass', function() {
-    return gulp.src(css.in)
-        .pipe(sass(css.sassOpts))
-        .pipe(gulp.dest(css.out));
+// --- Tasks for images
+
+gulp.task( 'images', function() {
+    gulp.src( 'sources/images/**' )
+        .pipe( image() )
+        .pipe( gulp.dest( 'assets/images' ) );
+} );
+
+// --- Tasks for styles
+
+gulp.task('css', function() {
+    gulp.src( 'sources/scss/**/*.scss' )
+        .pipe( sass().on( 'error', sass.logError ) )
+        .pipe( autoprefixer() )
+        .pipe( csso() )
+        .pipe( gulp.dest( 'assets/css' ) );
 });
 
-// Tâche par défaut
+// --- Watch tasks
+gulp.task( 'watch', function(){
+    gulp.watch( 'sources/images/**', [ 'images' ] );
+    gulp.watch( 'sources/scss/**/*.scss', [ 'css' ] );
+} )
 
-gulp.task('default', function(){
-    gulp.watch(css.watch, ['sass']);
-});
+// --- Aliases
+
+gulp.task( 'default', [ 'images', 'css' ] );
+gulp.task( 'work', [ 'default', 'watch' ] );
