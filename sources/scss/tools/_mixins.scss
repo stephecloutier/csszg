@@ -1,0 +1,22 @@
+@mixin hidden {
+    text-indent: -9999px;
+    font-size: 0;
+}
+
+@mixin clearfloat {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+@mixin biglink {
+    font-weight: 600;
+    padding-bottom: 0.15em;
+    border-bottom: 6px solid $limegreen;
+    transition: all 0.3s ease-in; // Animate it more ? Trace the line ? À VOIR !!
+}
+
+@mixin biglink-hover {
+    color: $blue;
+    border-color: $blue;
+}

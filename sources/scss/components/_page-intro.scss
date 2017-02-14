@@ -1,0 +1,30 @@
+div[id="zen-summary"]{
+    text-align: center;
+
+    p:first-child {
+        font-family: LeagueSpartan;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        color: $darkgrey;
+        padding: 3em 0;
+        width: 55%;
+        margin: 0 auto;
+    }
+    p:nth-child(2){
+        padding: 1.5em 0;
+        background-color: $turquoise;
+        color: white;
+        font-size: 2em;
+        font-family: OpenSans;
+        font-weight: 400;
+        line-height: 1.3em;
+        margin-bottom: 2em;
+        a {
+            display: inline-block;
+            @include biglink;
+        }
+        a:hover {
+            @include biglink-hover;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+// Pour avoir l'architecture des dossiers, voir
+// https://github.com/csswizardry/csswizardry.github.com/blob/master/css/csswizardry.scss
+
+
+@import "generic/reset";
+@import "settings/colors";
+@import "tools/mixins";
+
+@import "base/fonts";
+@import "base/links";
+@import "base/page";
+@import "base/sub-headings";
+@import "base/paragraphe";
+
+@import "components/page-head";
+@import "components/site-nav";
+@import "components/page-intro";
+@import "components/aside";
+@import "components/footer";

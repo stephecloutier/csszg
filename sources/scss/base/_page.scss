@@ -1,0 +1,30 @@
+html {
+    width: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.3em;
+    font-family: OpenSans;
+    font-weight: 100;
+    color: $darkgrey;
+}
+
+div[id="zen-supporting"] div[role="article"], div[id="zen-preamble"]{
+    margin: 0 5% 0 8%;
+    width: 50%;
+    //float: left;
+    a {
+        font-weight: inherit;
+        font-style: italic;
+        transition: all 0.3s ease-in;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: $blue;
+    }
+}
+
+div[role="main"]::after {
+    @include clearfloat;
+}
