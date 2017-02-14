@@ -23,8 +23,12 @@ var
 
 gulp.task( 'images', function() {
     gulp.src( 'sources/images/**' )
-        .pipe( image() )
-        .pipe( gulp.dest( 'assets/images' ) );
+        .pipe( image({
+            mozjpeg: false,
+            jpegoptim: false
+        }) )
+        .pipe( gulp.dest( 'assets/images' ) )
+
 } );
 
 // --- Tasks for styles
@@ -41,7 +45,7 @@ gulp.task('css', function() {
 gulp.task( 'watch', function(){
     gulp.watch( 'sources/images/**', [ 'images' ] );
     gulp.watch( 'sources/scss/**/*.scss', [ 'css' ] );
-} )
+} );
 
 // --- Aliases
 
