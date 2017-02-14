@@ -1,0 +1,19 @@
+div[id="zen-supporting"] div[role="article"]{
+    a {
+        font-weight: 500;
+        font-style: normal;
+        transition: all 0.3s ease-in;
+        color: $blue;
+    }
+    a:hover {
+        color: $turquoise;
+    }
+    p[role="contentinfo"] {
+        a{
+            color: $limegreen
+        }
+        a:hover {
+            color: $turquoise;
+        }
+    }
+}

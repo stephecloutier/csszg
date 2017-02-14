@@ -9,15 +9,8 @@ p[role="contentinfo"] {
     color: white;
     background-color: $darkgrey;
     font-weight: 400;
-    a {
-        font-style: italic;
-        transition: all 0.3s ease-in;
-    }
-    a:hover {
-        text-decoration: underline;
-        color: $limegreen;
-    }
 
+    // Links in _page-content.scss
 }
 
 footer{
