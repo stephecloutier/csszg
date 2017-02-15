@@ -5,6 +5,7 @@ header {
     background-image: url('../images/green_triangle.svg'), url("../images/bichromie1.jpg");
     background-color: transparent;
     background-position: center bottom 25px, center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
