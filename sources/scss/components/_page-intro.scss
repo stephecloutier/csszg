@@ -22,10 +22,17 @@ div[id="zen-summary"]{
         margin-bottom: 2em;
         a {
             display: inline-block;
+            transition: all 0.25s ease-out;
             @include biglink;
         }
-        a:hover {
+        a::after {
+            @include biglink-after;
+        }
+        a:hover::after {
             @include biglink-hover;
+        }
+        a:hover {
+            color: $limegreen;
         }
     }
 }
