@@ -1,9 +1,11 @@
 header {
-    min-height: 100vh;
+    max-height: 100vh;
     margin:0;
     padding:0;
-    background: url("../images/bichromie1.jpg") no-repeat center fixed;
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background: url("../images/bichromie1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; /* version standardisée */
 
     font-family: LeagueSpartan;
@@ -13,7 +15,10 @@ header {
     text-align: center;
 
     h1 {
-        padding-top: 7em; // à revoir, pour centrer ?
+        padding-top: 25%; // à revoir, pour centrer ?
+    }
+    h2 {
+        padding-bottom: 5%;
     }
 }
 
@@ -22,6 +27,7 @@ header::after {
     background: transparent url('../images/green_triangle.svg') no-repeat center;
     min-height: 33px;
     display: block;
+    padding-bottom: 10%;
     // position: relative;
     // bottom: 0vh;
     // à tester : mettre le triangle comme second background au header ou en ::before de l'élément suivant ou Parent relatif + position absolute
