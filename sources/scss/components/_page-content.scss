@@ -1,4 +1,11 @@
+div[id="zen-supporting"]{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 div[id="zen-supporting"] div[role="article"]{
+    max-width: 1800px;
+    margin: 0 auto;
     a {
         font-weight: 500;
         font-style: normal;
@@ -51,5 +58,5 @@ div[id="zen-requirements"]{
 
     p[role="contentinfo"] {
         width: 250%;
-    }
+        float: 100%;    }
 }

@@ -38,22 +38,26 @@ div[id="zen-summary"]{
 }
 
 div[id="zen-preamble"]{
-    margin-left: 8%;
     margin-bottom: 3em;
     font-size: 1.3em;
     line-height: 1.5;
     font-weight: 500;
+
+    max-width: 1600px;
+    margin: 0 auto;
 
     background: transparent url("../images/css-intro.svg") no-repeat;
     background-position: right 20% center;
     background-size: 20%;
 
     p {
+        margin-left: 8%;
         width: 50%;
         max-width: 700px;
     }
 
     h3 {
+        margin-left: 8%;
         width: 50%;
         max-width: 300px;
         border-bottom: none;
