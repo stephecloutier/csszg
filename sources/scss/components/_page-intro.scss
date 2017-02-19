@@ -4,7 +4,7 @@ div[id="zen-summary"]{
     p:first-child {
         font-family: LeagueSpartan;
         font-size: 1.5em;
-        line-height: 1.5em;
+        line-height: 1.5;
         color: $darkgrey;
         padding: 2em 0;
         width: 50%;
@@ -15,7 +15,7 @@ div[id="zen-summary"]{
         padding: 1.5em 0;
         background-color: $turquoise;
         color: white;
-        font-size: 2em;
+        font-size: 2.225em;
         font-family: OpenSans;
         font-weight: 400;
         line-height: 1.3em;
@@ -39,7 +39,7 @@ div[id="zen-summary"]{
 
 div[id="zen-preamble"]{
     padding-bottom: 3em;
-    font-size: 1.3em;
+    font-size: 1.225em;
     line-height: 1.5;
     font-weight: 500;
 
