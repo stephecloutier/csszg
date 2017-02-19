@@ -6,7 +6,7 @@ div[id="zen-summary"]{
         font-size: 1.5em;
         line-height: 1.5em;
         color: $darkgrey;
-        padding: 3em 0;
+        padding: 2em 0;
         width: 50%;
         max-width: 750px;
         margin: 0 auto;
@@ -38,21 +38,19 @@ div[id="zen-summary"]{
 }
 
 div[id="zen-preamble"]{
-    float: left;
-
-    width: 40%;
-    max-width: 600px;
-    padding-right: 52%;
     margin-left: 8%;
-
     font-size: 1.3em;
     line-height: 1.5;
-
     font-weight: 500;
 
     background: transparent url("../images/css-intro.svg") no-repeat;
-    background-position: 74%;
+    background-position: right 20% center;
     background-size: 20%;
+
+    p {
+        width: 50%;
+        max-width: 700px;
+    }
 
     h3 {
         width: 50%;
