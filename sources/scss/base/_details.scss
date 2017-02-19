@@ -5,3 +5,10 @@ abbr {
     line-height: 1;
     border-bottom: .1em dotted $turquoise;
 }
+
+::selection {
+  background: $limegreen; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $limegreen; /* Gecko Browsers */
+}
