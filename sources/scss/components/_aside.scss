@@ -1,17 +1,21 @@
-aside .design-selection, aside .design-archives{
-    width: 100%;
-    background-color: $turquoise;
-    text-align: center;
+aside {
+    padding-bottom: 2em;
+    background-color: $darkgrey;
     h3 {
         @include hidden;
+        display: block;
     }
+}
+
+aside .design-selection, aside .design-archives{
+    width: 100%;
+    text-align: center;
     li {
         display: inline-block;
     }
 }
 
 aside .design-archives {
-    background-color: $turquoise;
     ul {
         margin: 0 auto;
         transform: rotate(180deg);
@@ -61,5 +65,34 @@ li.viewall{
     }
     a:hover::after {
         @include biglink-hover;
+    }
+}
+
+div[id="design-selection"]{
+    color: white;
+    padding-bottom: 1em;
+    ul {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    li{
+        color: white;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1.8;
+        a {
+            font-style: normal;
+            color: white;
+            transition: all 0.3s ease-in;
+        }
+        a:hover {
+            color: $turquoise;
+        }
+    }
+    li:nth-last-child(n+2)::after {
+        content: "●";
+        display: inline-block;
+        color: $limegreen;
+        padding: 0 0.4em;
     }
 }

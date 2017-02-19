@@ -1,7 +1,7 @@
 p[role="contentinfo"] {
     display: block;
     margin: 4em 0 0 -20%;
-    padding: 2em 0 3em 0;
+    padding: 2em 0 0 0;
     color: white;
     background-color: $darkgrey;
     font-weight: 400;
@@ -12,7 +12,7 @@ p[role="contentinfo"] {
 
 footer{
     width: 100%;
-    padding: 0 0 2em 0;
+    padding: 3em 0 3em 0;
     text-align: center;
     background-color: $darkgrey;
 
