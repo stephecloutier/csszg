@@ -1,10 +1,9 @@
 p[role="contentinfo"] {
     position: absolute;
     display: block;
-    //min-height: 145px;
-    padding: 4em 0 4em 5%;
-    width: 95%;
-    margin: 25em 0 0 -8%;
+    padding: 4em 0 4em 8%;
+    width: 100%;
+    margin: 2em 0 0 -8%;
 
     color: white;
     background-color: $darkgrey;
@@ -15,10 +14,11 @@ p[role="contentinfo"] {
 
 footer{
     width: 100%;
-    position: relative;
+    //position: relative;
     margin-top: 3em;
     padding: 2em 0;
     text-align: center;
+    background-color: red;
     a {
         display: inline-block;
         background-color: white;
