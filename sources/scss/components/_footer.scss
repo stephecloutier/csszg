@@ -1,19 +1,21 @@
 p[role="contentinfo"] {
     width: 250%;
     display: block;
-    margin: 2em 0 0 -20%;
-    padding: 4em 0 4em 20%;
+    margin: 4em 0 0 -20%;
+    padding: 2em 0 3em 0;
     color: white;
     background-color: $darkgrey;
     font-weight: 400;
+    text-align: center;
 
     // Links in _page-content.scss
 }
 
 footer{
     width: 100%;
-    padding: 2em 0;
+    padding: 0 0 2em 0;
     text-align: center;
+    background-color: $darkgrey;
 
     a {
         display: inline-block;
@@ -24,23 +26,35 @@ footer{
         transition: all 0.3s ease-in;
     }
 
-    a:hover {
-        opacity: 0.6;
-    }
-
     a:first-child{
-        background-image: url("../images/h-html.svg");
+        background-image: url("../images/n-html.svg");
     }
     a:nth-child(2){
-        background-image: url("../images/h-css.svg");
+        background-image: url("../images/n-css.svg");
     }
     a:nth-child(3){
-        background-image: url("../images/h-cc.svg");
+        background-image: url("../images/n-cc.svg");
     }
     a:nth-child(4){
-        background-image: url("../images/h-access.svg");
+        background-image: url("../images/n-access.svg");
     }
     a:nth-child(5){
+        background-image: url("../images/n-github.svg");
+    }
+
+    a:first-child:hover{
+        background-image: url("../images/h-html.svg");
+    }
+    a:nth-child(2):hover{
+        background-image: url("../images/h-css.svg");
+    }
+    a:nth-child(3):hover{
+        background-image: url("../images/h-cc.svg");
+    }
+    a:nth-child(4):hover{
+        background-image: url("../images/h-access.svg");
+    }
+    a:nth-child(5):hover{
         background-image: url("../images/h-github.svg");
     }
 }
