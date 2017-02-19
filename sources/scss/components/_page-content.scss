@@ -1,8 +1,4 @@
 div[id="zen-supporting"] div[role="article"]{
-    margin: 0 5% 0 8%;
-    width: 40%;
-    max-width: 600px;
-
     a {
         font-weight: 500;
         font-style: normal;
@@ -12,9 +8,6 @@ div[id="zen-supporting"] div[role="article"]{
     a:hover {
         color: $turquoise;
     }
-    p:last-child {
-        margin-bottom: 2em
-    }
     p[role="contentinfo"] {
         a{
             color: $limegreen
@@ -22,6 +15,41 @@ div[id="zen-supporting"] div[role="article"]{
         a:hover {
             color: $turquoise;
         }
-        margin-bottom: 0;
+    }
+}
+
+div[id="zen-explanation"]{
+    width: 100%;
+    padding: 0 8% 3em 50%;
+    background: transparent url("../images/explanation.svg") no-repeat;
+    background-position: 20% 25%;
+    background-size: 18%;
+}
+
+div[id="zen-participation"]{
+    width: 100%;
+    padding: 0 50% 3em 8%;
+    background: transparent url("../images/participation.svg") no-repeat;
+    background-position: right 20% center;
+    background-size: 18%;
+}
+
+div[id="zen-benefits"]{
+    width: 100%;
+    padding: 3em 8% 3em 50%;
+    background: transparent url("../images/benefits.svg") no-repeat;
+    background-position: left 20% center;
+    background-size: 15%;
+}
+
+div[id="zen-requirements"]{
+    width: 100%;
+    padding: 3em 52% 0 8%;
+    background: transparent url("../images/requirements2.svg") no-repeat;
+    background-position: right 20% center;
+    background-size: 18%;
+
+    p[role="contentinfo"] {
+        width: 250%;
     }
 }

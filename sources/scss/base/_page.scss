@@ -10,6 +10,6 @@ body {
     color: $darkgrey;
 }
 
-div[role="main"]::after {
-    @include clearfloat;
-}
+// div[role="main"]::after {
+//     @include clearfloat;
+// }
