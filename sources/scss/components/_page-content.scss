@@ -12,6 +12,9 @@ div[id="zen-supporting"] div[role="article"]{
     a:hover {
         color: $turquoise;
     }
+    p:last-child {
+        margin-bottom: 2em
+    }
     p[role="contentinfo"] {
         a{
             color: $limegreen
@@ -19,6 +22,6 @@ div[id="zen-supporting"] div[role="article"]{
         a:hover {
             color: $turquoise;
         }
-
+        margin-bottom: 0;
     }
 }
