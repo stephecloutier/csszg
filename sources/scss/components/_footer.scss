@@ -14,34 +14,33 @@ footer{
     width: 100%;
     padding: 2em 0;
     text-align: center;
-    background-color: red;
+
     a {
         display: inline-block;
-        background-color: white;
-        width: 4em;
-        height: 4em;
+        width: 70px;
+        height: 70px;
         color: transparent;
         margin-right: 2em;
         transition: all 0.3s ease-in;
     }
-    :first-child{
-        background: transparent url(../images/h-html.svg) no-repeat;
-    }
-    :nth-child(2){
-        background: transparent url(../images/h-css.svg) no-repeat;
-    }
-    :nth-child(3){
-        background: transparent url(../images/h-cc.svg) no-repeat;
-    }
-    :nth-child(4){
-        background: transparent url(../images/h-access.svg) no-repeat;
-    }
-    :nth-child(5){
-        background: transparent url(../images/h-github.svg) no-repeat;
-        margin-right: 0;
-    }
 
     a:hover {
         opacity: 0.6;
+    }
+
+    a:first-child{
+        background-image: url("../images/h-html.svg");
+    }
+    a:nth-child(2){
+        background-image: url("../images/h-css.svg");
+    }
+    a:nth-child(3){
+        background-image: url("../images/h-cc.svg");
+    }
+    a:nth-child(4){
+        background-image: url("../images/h-access.svg");
+    }
+    a:nth-child(5){
+        background-image: url("../images/h-github.svg");
     }
 }
