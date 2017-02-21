@@ -1,0 +1,22 @@
+@media screen and (min-width: 1600px) {
+    div[id="zen-supporting"] div[id="zen-requirements"] {
+        background-size: 288px;
+        background-position: 1200px 50%;
+        p, h3 {
+            width: 1600px;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding-left: 128px;
+            padding-right: 832px; // 1600 - largeur du p, - son précédent padding.
+        }
+        h3 {
+            display: block;
+        }
+        p[role="contentinfo"]{
+            padding: 2em 0 0;
+        }
+        // tester avec un :after pour que l'image soit considérer comme un enfant du div, et être considérer lors du margin 0 auto
+
+
+    }
+}

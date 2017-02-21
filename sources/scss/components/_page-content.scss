@@ -27,7 +27,7 @@ div[id="zen-supporting"] {
         max-width: 1600px;
         p, h3 {
             width: 40%;
-            max-width: 700px;
+            max-width: 640px;
         }
     }
     div:nth-child(odd){
@@ -45,17 +45,19 @@ div[id="zen-supporting"] {
         padding-bottom: 0;
         padding-top: 2.5em;
 
-        width: 100%;
-        //padding: 2.5em 52% 0 8%;
-        background: transparent url("../images/requirements2.svg") no-repeat;
-        background-position: right 25% center;
-        background-size: 18%;
+        // - Media queries pour fixer en pixels les éléments individuels
+
+        p, h3 {
+            margin: 0 0 0 8%;
+        }
+        h3 {
+            width: 100%;
+        }
 
         p:nth-last-child(2){
-            padding-bottom: 3em;
+            padding-bottom: 6em;
         }
         p[role="contentinfo"] {
-            //width: 250%;
             max-width: none;
             width: 100%;
             margin: 0;
@@ -83,4 +85,10 @@ div[id="zen-benefits"]{
     background-position: left 25% center;
     background-size: 12.5%;
     padding: 2em 0;
+}
+
+div[id="zen-requirements"]{
+    background: transparent url("../images/requirements2.svg") no-repeat;
+    background-position: right 25% center;
+    background-size: 18%;
 }
