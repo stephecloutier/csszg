@@ -1,18 +1,16 @@
 div[id="zen-supporting"]{
-    max-width: 1600px;
-    margin: 0 auto;
+    //max-width: 1600px;
+    //margin: 0 auto;
 }
 
-div[id="zen-supporting"] div[role="article"]{
-    max-width: 1800px;
-    margin: 0 auto;
-    a {
+div[id="zen-supporting"] {
+    div a {
         font-weight: 500;
         font-style: normal;
         transition: all 0.3s ease-in;
         color: $blue;
     }
-    a:hover {
+    div a:hover {
         color: $turquoise;
     }
     p[role="contentinfo"] {
@@ -23,40 +21,66 @@ div[id="zen-supporting"] div[role="article"]{
             color: $turquoise;
         }
     }
+    div{
+        margin: 0 auto;
+        padding: 3em 0;
+        max-width: 1600px;
+        p, h3 {
+            width: 40%;
+            max-width: 700px;
+        }
+    }
+    div:nth-child(odd){
+        p, h3 {
+            margin: 0 8% 0 50%;
+        }
+    }
+    div:nth-child(even){
+        p, h3 {
+            margin: 0 50% 0 8%;
+        }
+    }
+    div[id="zen-requirements"]{
+        max-width: none;
+        padding-bottom: 0;
+        padding-top: 2.5em;
+
+        width: 100%;
+        //padding: 2.5em 52% 0 8%;
+        background: transparent url("../images/requirements2.svg") no-repeat;
+        background-position: right 25% center;
+        background-size: 18%;
+
+        p:nth-last-child(2){
+            padding-bottom: 3em;
+        }
+        p[role="contentinfo"] {
+            //width: 250%;
+            max-width: none;
+            width: 100%;
+            margin: 0;
+        }
+    }
 }
 
+
+// - Images de contenu - //
+
 div[id="zen-explanation"]{
-    width: 100%;
-    padding: 2.5em 8% 2.5em 50%;
     background: transparent url("../images/explanation.svg") no-repeat;
-    background-position: 20% 50%;
+    background-position: 25% 30%;
     background-size: 18%;
 }
 
 div[id="zen-participation"]{
-    width: 100%;
-    padding: 2.5em 50% 2.5em 8%;
     background: transparent url("../images/participation.svg") no-repeat;
-    background-position: right 20% center;
+    background-position: right 25% center;
     background-size: 18%;
 }
 
 div[id="zen-benefits"]{
-    width: 100%;
-    padding: 2.5em 8% 2.5em 50%;
     background: transparent url("../images/benefits.svg") no-repeat;
-    background-position: left 20% center;
+    background-position: left 25% center;
     background-size: 12.5%;
-}
-
-div[id="zen-requirements"]{
-    width: 100%;
-    padding: 2.5em 52% 0 8%;
-    background: transparent url("../images/requirements2.svg") no-repeat;
-    background-position: right 20% center;
-    background-size: 18%;
-
-    p[role="contentinfo"] {
-        width: 250%;
-        float: 100%;    }
+    padding: 2em 0;
 }
