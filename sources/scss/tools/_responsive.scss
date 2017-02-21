@@ -78,12 +78,6 @@
 
 
 @media screen and (max-width: 670px){
-    // - nav - //
-    div[id="zen-resources"]{
-        position: static;
-        padding: inherit 0.3em;
-    }
-
     // - aside -> artists - //
     div[id="design-selection"] li{
         line-height: 2.5;
@@ -98,6 +92,7 @@
 }
 
 @media screen and (max-width: 550px){
+
     // - footer round links - //
     footer a {
         margin-bottom: 1em;
@@ -108,6 +103,12 @@
 }
 
 @media screen and (max-width: 450px){
+    // - nav - //
+    div[id="zen-resources"]{
+        position: static;
+        padding: inherit 0.3em;
+    }
+
     // - Second intro - //
     div[id="zen-summary"]{
         p:nth-child(2) {
