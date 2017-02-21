@@ -39,7 +39,7 @@
 }
 
 @media screen and (max-width: 1200px){
-    // - Première intro - //
+    // - First intro - //
     div[id="zen-summary"]{
         p:first-child {
             width: 75%;
@@ -61,21 +61,68 @@
         font-size: 2.225em;
         padding: 2em 0.3em;
     }
+
+    // - Second intro - //
+    div[id="zen-summary"]{
+        p:nth-child(2) {
+            padding: 1.5em 0.3em;
+        }
+    }
+
+    // - footer - //
+    p[role="contentinfo"] {
+        line-height: 2;
+        padding: 2em 0.3em 0 0.3em;
+    }
 }
+
 
 @media screen and (max-width: 670px){
     // - nav - //
     div[id="zen-resources"]{
         position: static;
+        padding: inherit 0.3em;
+    }
+
+    // - aside -> artists - //
+    div[id="design-selection"] li{
+        line-height: 2.5;
+    }
+    div[id="design-selection"] {
+        padding-bottom: 3em;
+    }
+    aside {
+        padding-bottom: 0.3em;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    // - footer round links - //
+    footer a {
+        margin-bottom: 1em;
+    }
+    footer {
+        padding-bottom: 2em;
     }
 }
 
+@media screen and (max-width: 450px){
+    // - Second intro - //
+    div[id="zen-summary"]{
+        p:nth-child(2) {
+            font-size: 1.225em;
+            line-height: 2;
+        }
+    }
+}
 
 @media screen and (max-width: 400px){
     // - nav - //
     div[id="zen-resources"]{
         position: static;
         font-size: 0.816em;
+        padding-top: 2em;
         ul{
             text-align: center;
             margin: 1.225em auto;
@@ -84,17 +131,34 @@
         }
     }
 
-    // - Première intro - //
+    // - First intro - //
     div[id="zen-summary"]{
         p:first-child {
             font-size: 1.225em;
         }
     }
+
 }
 
 @media screen and (max-width: 300px){
     // - header title - //
     header {
         font-size: 1.5em;
+    }
+
+    // - First intro - //
+    div[id="zen-summary"]{
+        p:first-child {
+            font-size: 1em;
+        }
+    }
+
+    // - aside -> viewall & next - //
+    li.next, li.viewall {
+        font-size: 1.225em;
+    }
+    li.next a {
+        width: 20px;
+        height: 20px;
     }
 }
