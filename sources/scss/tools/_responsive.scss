@@ -45,6 +45,35 @@
             width: 75%;
         }
     }
+
+    // - intro image - //
+    div[id="zen-preamble"]{
+        background-position: right 15% center;
+    }
+
+    // - Content images +++ - //
+    div[id="zen-supporting"] div{
+        background-size: 25%;
+
+        &:nth-child(odd){
+            background-position: left 15% center;
+        }
+        &:nth-child(even){
+            background-position: right 15% center;
+        }
+        &[id="zen-benefits"]{
+            background-size: 20%;
+            background-position: left 20% center;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    // - intro image - //
+    div[id="zen-preamble"]{
+        background-size: 25%;
+        background-position: right 10% center;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -66,6 +95,30 @@
     div[id="zen-summary"]{
         p:nth-child(2) {
             padding: 1.5em 0.3em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    // - Content images +++ - //
+    .page-wrapper div[id="zen-supporting"] div {
+
+        background-image: none;
+
+        // - Content text - //
+
+        padding: 1.5em 0;
+        p, h3 {
+            width: 100%;
+            padding: 0 8% 0 8%;
+            margin: 0;
+        }
+
+        &[id="zen-requirements"]{
+            padding-bottom: 0;
+        }
+        p[role="contentinfo"]{
+            margin-top: 3em;
+            padding-top: 2em;
         }
     }
 
@@ -74,10 +127,31 @@
         line-height: 2;
         padding: 2em 0.3em 0 0.3em;
     }
+
+    // - aside artists - //
+    div[id="design-selection"] ul{
+        padding: 0 0.3em 2em 0.5em;
+    }
 }
 
 
 @media screen and (max-width: 670px){
+    // - intro image - //
+    div[id="zen-preamble"]{
+        background-image: none;
+        background-size: 0;
+
+        // - intro text - //
+        padding-bottom: 1.5em;
+        margin-left: 8%;
+        margin-right: 8%;
+        p, h3 {
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+
     // - aside -> artists - //
     div[id="design-selection"] li{
         line-height: 2.5;
@@ -139,6 +213,11 @@
         }
     }
 
+    // - Content intro - //
+    div[id="zen-preamble"] p {
+        font-size: 0.816em;
+    }
+
 }
 
 @media screen and (max-width: 300px){
@@ -154,6 +233,11 @@
         }
     }
 
+    // - Content intro - //
+    div[id="zen-preamble"] h3 {
+        font-size: 0.816em;
+    }
+
     // - aside -> viewall & next - //
     li.next, li.viewall {
         font-size: 1.225em;
@@ -161,5 +245,10 @@
     li.next a {
         width: 20px;
         height: 20px;
+    }
+
+    // - aside artists - //
+    div[id="design-selection"] {
+        font-size: 0.816em;
     }
 }
