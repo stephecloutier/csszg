@@ -1,7 +1,5 @@
 @media screen and (min-width: 1600px) {
     div[id="zen-supporting"] div[id="zen-requirements"] {
-        background-size: 288px;
-        background-position: 1200px 50%;
         p, h3 {
             width: 1600px;
             max-width: 1600px;
@@ -11,12 +9,24 @@
         }
         h3 {
             display: block;
+            position: relative;
         }
         p[role="contentinfo"]{
             padding: 2em 0 0;
         }
-        // tester avec un :after pour que l'image soit considérer comme un enfant du div, et être considérer lors du margin 0 auto
 
+        background-image: none;
+    }
 
+    div[id="zen-requirements"] h3::after {
+        content: "";
+        display: block;
+        width: 1600px;
+        height: 259px; // largeur de l'image 288, proportionnellement sa height est de 258 et des poussières
+        position: absolute;
+        top: 6em;
+        background: transparent url("../images/requirements2.svg") no-repeat;
+        background-size: 288px;
+        background-position: 854px 0; // impossible de dire comment ça se fait. j'ai calculé aux pixels
     }
 }
