@@ -1,6 +1,6 @@
 div[id="zen-supporting"] {
     div a {
-        font-weight: 500;
+        font-weight: 600;
         font-style: normal;
         transition: all 0.3s ease-in;
         color: $blue;
@@ -8,9 +8,11 @@ div[id="zen-supporting"] {
     div a:hover {
         color: $turquoise;
     }
+
     p[role="contentinfo"] {
         a{
-            color: $limegreen
+            color: white;
+            font-weight: 600;
         }
         a:hover {
             color: $turquoise;
@@ -27,12 +29,18 @@ div[id="zen-supporting"] {
     }
     div:nth-child(odd){
         p, h3 {
-            margin: 0 8% 0 50%;
+            margin: 0 8% 1em 50%;
+        }
+        h3 {
+            margin-bottom: 0.5em;
         }
     }
     div:nth-child(even){
         p, h3 {
-            margin: 0 50% 0 8%;
+            margin: 0 50% 1em 8%;
+        }
+        h3 {
+            margin-bottom: 0.5em;
         }
     }
     div[id="zen-requirements"]{
@@ -42,11 +50,9 @@ div[id="zen-supporting"] {
 
         // - Media queries pour fixer en pixels les éléments individuels
 
-        p, h3 {
-            margin: 0 0 0 8%;
-        }
         h3 {
             width: 100%;
+            margin: 0 0 0.5em 8%;
         }
 
         p:nth-last-child(2){
