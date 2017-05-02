@@ -54,14 +54,9 @@ li.viewall{
         @include biglink;
         transition: all 0.25s ease-out;
     }
-    a::after {
-        @include biglink-after;
-    }
+
     a:hover{
-        color: $limegreen;
-    }
-    a:hover::after {
-        @include biglink-hover;
+        color: $turquoise;
     }
 }
 

@@ -45,3 +45,13 @@
    font-weight: 100;
    font-style: italic;
 }
+
+@font-face {
+    font-family: "icons-font";
+    src: url("../fonts/icons-font/icons-font.eot");
+    src: url("../fonts/icons-font/icons-font.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/icons-font/icons-font.ttf") format("truetype"),
+    url("../fonts/icons-font/icons-font.woff") format("woff"),
+    url("../fonts/icons-font/icons-font.svg") format("svg");
+    font-weight: 400;
+}
