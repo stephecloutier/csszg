@@ -12,48 +12,44 @@ p[role="contentinfo"] {
 
 footer{
     width: 100%;
-    padding: 3em 0 3em 0;
+    padding: 1em 0 1em 0;
     text-align: center;
     background-color: $darkgrey;
 
     a {
         display: inline-block;
         width: 70px;
-        height: 70px;
+        //height: 70px;
         color: transparent;
         margin-right: 2em;
-        transition: all 0.3s ease-in;
+        &::after {
+            font-family: "icons-font";
+            font-size: 5em;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            transition: all 0.3s ease-in;
+
+        }
+        &:hover::after {
+            color: $turquoise;
+        }
     }
 
-    a:first-child{
-        background-image: url("../images/n-html.svg");
+    a:first-child::after {
+        content: "e";
     }
-    a:nth-child(2){
-        background-image: url("../images/n-css.svg");
+    a:nth-child(2)::after{
+        content: "c";
     }
-    a:nth-child(3){
-        background-image: url("../images/n-cc.svg");
+    a:nth-child(3)::after{
+        content: "b";
     }
-    a:nth-child(4){
-        background-image: url("../images/n-access.svg");
+    a:nth-child(4)::after{
+        content: "a";
     }
-    a:nth-child(5){
-        background-image: url("../images/n-github.svg");
-    }
-
-    a:first-child:hover{
-        background-image: url("../images/h-html.svg");
-    }
-    a:nth-child(2):hover{
-        background-image: url("../images/h-css.svg");
-    }
-    a:nth-child(3):hover{
-        background-image: url("../images/h-cc.svg");
-    }
-    a:nth-child(4):hover{
-        background-image: url("../images/h-access.svg");
-    }
-    a:nth-child(5):hover{
-        background-image: url("../images/h-github.svg");
+    a:nth-child(5)::after{
+        content: "d";
     }
 }

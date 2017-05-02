@@ -31,19 +31,29 @@ li.next {
 }
 
 li.next a{
-    text-indent: -9999px;
     float: right;
-
     width: 30px;
     height: 30px;
-    margin-left: 40%;
-    background: url("../images/next.svg") no-repeat;
-
-    &:hover {
-        background-image: url("../images/h-next.svg");
-    }
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    position: relative;
     &::after {
         @include clearfloat;
+    }
+    &::before {
+        position: relative;
+        top: 15px;
+        margin-left: 0.5em;
+        content: "f";
+        font-family: "icons-font";
+        color: white;
+        display: inline-block;
+        font-size: 2rem;
+        transition: 0.3s ease-in-out;
+    }
+    &:hover::before {
+        color: $turquoise;
     }
 }
 
