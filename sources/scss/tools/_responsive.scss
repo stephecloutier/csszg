@@ -14,9 +14,13 @@
             padding-left: 128px;
             padding-right: 832px; // 1600 - largeur du p, - son précédent padding.
         }
+        p {
+            margin-bottom: 1em;
+        }
         h3 {
             display: block;
             position: relative;
+            margin-bottom: 0.5em;
         }
         p[role="contentinfo"]{
             padding: 2em 0 0;
@@ -112,6 +116,12 @@
             padding: 0 8% 0 8%;
             margin: 0;
         }
+        p {
+            margin-bottom: 1em;
+        }
+        h3 {
+            margin-bottom: 0.5em;
+        }
 
         &[id="zen-requirements"]{
             padding-bottom: 0;
@@ -148,6 +158,12 @@
         p, h3 {
             width: 100%;
             margin: 0;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        h3 {
+            margin-bottom: 0.5em;
         }
     }
 
